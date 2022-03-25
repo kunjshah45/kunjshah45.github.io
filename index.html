@@ -1,5 +1,211 @@
+<!DOCTYPE html>
 <html>
-	<body>
-		<p>Hello Friend. Work in progress</p>
-	</body>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<base href=".">
+	<title>Kunj Shah</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/icons8-dev-120.ico">
+	<link rel="canonical" href="http://www.kunjshah.dev/index.html">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta property="og:site_name" content="Kunj Shah">
+	<meta property="og:title" content="Kunj Shah">
+	<meta property="og:url" content="http://www.kunjshah.dev/index.html">
+	<meta property="og:type" content="website">
+	<meta itemprop="name" content="Kunj Shah">
+	<meta itemprop="url" content="http://www.kunjshah.dev/index.html">
+	<meta name="twitter:title" content="Kunj Shah">
+	<meta name="twitter:url" content="http://www.kunjshah.dev/index.html">
+	<meta name="twitter:card" content="summary">
+	<meta name="description" content="">
+
+	<style type="text/css">
+		@font-face {
+			font-family: proxima-nova;
+			src: url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/l?subset_id=2&fvd=n3&v=3) format("woff2"), url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/d?subset_id=2&fvd=n3&v=3) format("woff"), url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/a?subset_id=2&fvd=n3&v=3) format("opentype");
+			font-weight: 300;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: auto;
+		}
+
+		@font-face {
+			font-family: proxima-nova;
+			src: url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?subset_id=2&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?subset_id=2&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?subset_id=2&fvd=n4&v=3) format("opentype");
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: auto;
+		}
+
+		@font-face {
+			font-family: proxima-nova;
+			src: url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?subset_id=2&fvd=n6&v=3) format("woff2"), url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?subset_id=2&fvd=n6&v=3) format("woff"), url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?subset_id=2&fvd=n6&v=3) format("opentype");
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: auto;
+		}
+
+		@font-face {
+			font-family: proxima-nova;
+			src: url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?subset_id=2&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?subset_id=2&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?subset_id=2&fvd=n7&v=3) format("opentype");
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: auto;
+		}
+
+		@font-face {
+			font-family: proxima-nova;
+			src: url(https://use.typekit.net/af/40d372/00000000000000007735e607/30/l?subset_id=2&fvd=i3&v=3) format("woff2"), url(https://use.typekit.net/af/40d372/00000000000000007735e607/30/d?subset_id=2&fvd=i3&v=3) format("woff"), url(https://use.typekit.net/af/40d372/00000000000000007735e607/30/a?subset_id=2&fvd=i3&v=3) format("opentype");
+			font-weight: 300;
+			font-style: italic;
+			font-stretch: normal;
+			font-display: auto;
+		}
+
+		@font-face {
+			font-family: proxima-nova;
+			src: url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/l?subset_id=2&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/d?subset_id=2&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/a?subset_id=2&fvd=i4&v=3) format("opentype");
+			font-weight: 400;
+			font-style: italic;
+			font-stretch: normal;
+			font-display: auto;
+		}
+
+		@font-face {
+			font-family: proxima-nova;
+			src: url(https://use.typekit.net/af/4de20a/00000000000000007735e604/30/l?subset_id=2&fvd=i7&v=3) format("woff2"), url(https://use.typekit.net/af/4de20a/00000000000000007735e604/30/d?subset_id=2&fvd=i7&v=3) format("woff"), url(https://use.typekit.net/af/4de20a/00000000000000007735e604/30/a?subset_id=2&fvd=i7&v=3) format("opentype");
+			font-weight: 700;
+			font-style: italic;
+			font-stretch: normal;
+			font-display: auto;
+		}
+	</style>
+	<script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+	<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/icons8-dev-120.ico">
+</head>
+
+
+
+<body
+	class="underline-body-links blog-meta-data-split  hide-author   social-icon-style-round  show-products-category-navigation    event-show-past-events event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts      gallery-design-grid aspect-ratio-auto lightbox-style-light gallery-navigation-circles gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-circular gallery-transitions-fade gallery-show-arrows gallery-auto-crop  gallery-loop product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-outline button-corner-style-rounded tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-type-page collection-layout-default collection-560c2d88e4b0eff8597f1edf homepage mobile-style-available"
+	id="collection-560c2d88e4b0eff8597f1edf">
+
+	<div id="site">
+		<div id="canvas">
+
+			<div id="headerWrapper">
+				<header id="header">
+
+					<div id="headerInfo">
+
+						<div style="padding-bottom: 1em;">
+							<img style="width: 20%;border-radius:50%;" src="./assets/img/profile_img.jpg">
+						</div>
+						<h1 class="logo site-title" data-shrink-original-size="72" style="letter-spacing: 0.138889em;">
+							<a href="https://www.kunjshah.dev/" title="Kunj Shah" role="bookmark"
+								data-content-field="site-title">
+								<span class="placed-site-title">Kunj Shah</span>
+							</a>
+						</h1>
+						<p class="" data-content-field="site-tagline" data-shrink-original-size="14" color:#a8a8a8;
+							style="font-family:Cabin,Helvetica,Arial,sans-serif;color:#a8a8a8;text-transform:uppercase;
+							font-weight:normal;
+							letter-spacing: 0.428571em;">Software
+							Engineer</p>
+
+						<div id="navBlock" role="navigation">
+							<nav class="main-nav" data-content-field="navigation">
+								<ul>
+									<li class="page-collection active-link">
+										<a href="./index.html">HOME</a>
+									</li>
+									<li class="page-collection">
+										<a href="./portfolio.html">Portfolio</a>
+									</li>
+									<li class="page-collection">
+										<a href="./resume.html">Resume</a>
+									</li>
+									<li class="page-collection">
+										<a href="./contact.html">Contact Me</a>
+									</li>
+								</ul>
+
+								<select id="mobileSelect" name="mobileSelect">
+									<option class="mobile-select-label" value="">Navigation</option>
+									<option class="page-collection" value="./index.html" selected="selected">HOME
+									</option>
+									<option class="page-collection" value="./portfolio.html">PORTFOLIO</option>
+									<option class="page-collection" value="./resume.html">RESUME</option>
+									<option class="page-collection" value="./contact.html">CONTACT ME</option>
+								</select>
+							</nav>
+						</div>
+						<!-- CATEGORY NAV -->
+					</div>
+				</header>
+			</div><!-- / headerWrapper -->
+
+			<div id="pageWrapper" class="hfeed" role="main">
+				<section id="page" data-content-field="main-content">
+					<div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1636039053177"
+						id="page-560c2d88e4b0eff8597f1edf">
+						<div class="row sqs-row">
+							<div class="col sqs-col-12">
+								<div class="sqs-block html-block sqs-block-html" data-block-type="2"
+									id="block-yui_3_17_2_1_1635272617067_3154">
+									<div class="sqs-block-content">
+										<!-- While becoming proficient in the MERN stack (MongoDB, Express, React, Node) and React Native for mobile application development at Expertrons. I also taught myself the ROS Framework with Python3 for my work on automated guided vehicle  for my work at Geekwork. -->
+										<p class="">
+										<h1>Hello!</h1> I'm Kunj! I'm a fullstack web engineer, passionate about
+										learning and broadening my skillsets to always make the best possible
+										contribution to any team. I'm ready to continue iterating the learning
+										process to acquire any skills needed as I dive further into this exciting
+										career. </p>
+										<p class="">I am actively seeking a full time software engineering internship,
+											so for any work inquiries, feel free to reach out to me at
+											<a href="mailto:kunjshah45@gmail.com">kunjshah45@gmail.com</a>, or through
+											the contact page.
+										</p>
+									</div>
+									<div class="w3-xlarge" style="padding-top: 1em;word-spacing: 1em;">
+										<a href="mailto:kunjshah45@gmail.com"><i class="fa fa-envelope-o"></i></a>
+										<a href="https://www.linkedin.com/in/kunjshah45/"><i
+												class="fa fa-linkedin"></i></a>
+										<a href="https://github.com/kunjshah45/"><i class="fa fa-github"></i></a>
+										<a href="https://twitter.com/kunjpshah"><i class="fa fa-twitter"></i></a>
+										<a href="https://www.instagram.com/kunjshah_/"><i
+												class="fa fa-instagram"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="row sqs-row" id="yui_3_17_2_1_1648109658606_100">
+							<div class="col">
+								<div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21"
+									id="block-yui_3_17_2_30_1443638555211_10149">
+									<div class="sqs-block-content">&nbsp;</div>
+									<p>
+									<h1>Tech I'm familer with</h1>
+									</p>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</section>
+			</div><!-- / pageWrapper -->
+
+		</div>
+	</div>
+</body>
+
 </html>

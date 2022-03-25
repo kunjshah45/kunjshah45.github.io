@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "blurhash": "^1.1.5",
+    "firebase": "^9.6.10",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.19.0",
+    "nodemailer": "^6.7.3",
+    "npm": "^8.5.5"
+  }
+}

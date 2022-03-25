@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href=".">
+    <title>Portfolio - Kunj Shah</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icons8-dev-120.ico">
+    <link rel="canonical" href="http://www.kunjshah.dev/portfolio.html">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta property="og:site_name" content="Kunj Shah">
+    <meta property="og:title" content="Kunj Shah">
+    <meta property="og:url" content="http://www.kunjshah.dev/portfolio.html">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Kunj Shah">
+    <meta itemprop="url" content="http://www.kunjshah.dev/portfolio.html">
+    <meta name="twitter:title" content="Kunj Shah">
+    <meta name="twitter:url" content="http://www.kunjshah.dev/portfolio.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="description" content="Portfolio and projects">
+
+    <style type="text/css">
+        @font-face {
+            font-family: proxima-nova;
+            src: url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/l?subset_id=2&fvd=n3&v=3) format("woff2"), url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/d?subset_id=2&fvd=n3&v=3) format("woff"), url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/a?subset_id=2&fvd=n3&v=3) format("opentype");
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            font-display: auto;
+        }
+
+        @font-face {
+            font-family: proxima-nova;
+            src: url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?subset_id=2&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?subset_id=2&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?subset_id=2&fvd=n4&v=3) format("opentype");
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            font-display: auto;
+        }
+
+        @font-face {
+            font-family: proxima-nova;
+            src: url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?subset_id=2&fvd=n6&v=3) format("woff2"), url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?subset_id=2&fvd=n6&v=3) format("woff"), url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?subset_id=2&fvd=n6&v=3) format("opentype");
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            font-display: auto;
+        }
+
+        @font-face {
+            font-family: proxima-nova;
+            src: url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?subset_id=2&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?subset_id=2&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?subset_id=2&fvd=n7&v=3) format("opentype");
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: normal;
+            font-display: auto;
+        }
+
+        @font-face {
+            font-family: proxima-nova;
+            src: url(https://use.typekit.net/af/40d372/00000000000000007735e607/30/l?subset_id=2&fvd=i3&v=3) format("woff2"), url(https://use.typekit.net/af/40d372/00000000000000007735e607/30/d?subset_id=2&fvd=i3&v=3) format("woff"), url(https://use.typekit.net/af/40d372/00000000000000007735e607/30/a?subset_id=2&fvd=i3&v=3) format("opentype");
+            font-weight: 300;
+            font-style: italic;
+            font-stretch: normal;
+            font-display: auto;
+        }
+
+        @font-face {
+            font-family: proxima-nova;
+            src: url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/l?subset_id=2&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/d?subset_id=2&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/a?subset_id=2&fvd=i4&v=3) format("opentype");
+            font-weight: 400;
+            font-style: italic;
+            font-stretch: normal;
+            font-display: auto;
+        }
+
+        @font-face {
+            font-family: proxima-nova;
+            src: url(https://use.typekit.net/af/4de20a/00000000000000007735e604/30/l?subset_id=2&fvd=i7&v=3) format("woff2"), url(https://use.typekit.net/af/4de20a/00000000000000007735e604/30/d?subset_id=2&fvd=i7&v=3) format("woff"), url(https://use.typekit.net/af/4de20a/00000000000000007735e604/30/a?subset_id=2&fvd=i7&v=3) format("opentype");
+            font-weight: 700;
+            font-style: italic;
+            font-stretch: normal;
+            font-display: auto;
+        }
+    </style>
+    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icons8-dev-120.ico">
+</head>
+
+<body
+    class="underline-body-links blog-meta-data-split  hide-author   social-icon-style-round  show-products-category-navigation    event-show-past-events event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts      gallery-design-grid aspect-ratio-auto lightbox-style-light gallery-navigation-circles gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-circular gallery-transitions-fade gallery-show-arrows gallery-auto-crop  gallery-loop product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-outline button-corner-style-rounded tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-type-page collection-layout-default collection-560c2d88e4b0eff8597f1edf homepage mobile-style-available"
+    id="collection-560c2d88e4b0eff8597f1edf">
+
+    <div id="site">
+        <div id="canvas">
+
+            <div id="headerWrapper">
+                <header id="header">
+                    <div id="headerInfo">
+                        <h1 class="logo site-title" data-shrink-original-size="72" style="letter-spacing: 0.138889em;">
+                            <a href="https://www.kunjshah.dev/" title="Kunj Shah" role="bookmark"
+                                data-content-field="site-title">
+                                <span class="placed-site-title">Kunj Shah</span>
+                            </a>
+                        </h1>
+                        <p class="site-tagline" data-content-field="site-tagline" data-shrink-original-size="14"
+                            style="letter-spacing: 0.428571em;">Software Engineer</p>
+
+                        <div id="navBlock" role="navigation">
+                            <nav class="main-nav" data-content-field="navigation">
+                                <ul>
+                                    <li class="page-collection">
+                                        <a href="./index.html">HOME</a>
+                                    </li>
+                                    <li class="page-collection">
+                                        <a href="./portfolio.html">Portfolio</a>
+                                    </li>
+                                    <li class="page-collection active-link">
+                                        <a href="./resume.html">Resume</a>
+                                    </li>
+                                    <li class="page-collection">
+                                        <a href="./contact.html">Contact Me</a>
+                                    </li>
+                                </ul>
+                                <select id="mobileSelect" name="mobileSelect">
+                                    <option class="mobile-select-label" value="">Navigation</option>
+                                    <option class="page-collection" value="/index.html">HOME</option>
+                                    <option class="page-collection" value="/portfolio.html" selected="selected">
+                                        Portfolio</option>
+                                    <option class="page-collection" value="/resume.html">Resume
+                                    </option>
+                                    <option class="page-collection" value="./contact.html">Contact Me</option>
+                                </select>
+                            </nav>
+                        </div>
+                        <!-- CATEGORY NAV -->
+                    </div>
+                </header>
+            </div><!-- / headerWrapper -->
+            <div id="pageWrapper" class="hfeed" role="main">
+                <section id="page" data-content-field="main-content">
+                    <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1636038952839"
+                        id="page-61784729e613752dd43fc2e7">
+                        <div class="row sqs-row" id="yui_3_17_2_1_1648206741752_141">
+                            <div class="col sqs-col-12 span-12" id="yui_3_17_2_1_1648206741752_140">
+                                <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+                                    id="block-4845974c7c51ebb02a39">
+                                    <div class="sqs-block-content">
+                                        <h1 style="text-align:center;white-space:pre-wrap;">Portfolio</h1>
+                                    </div>
+                                </div>
+                                <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21"
+                                    id="block-609b39c004fb8fd32510">
+                                    <div class="sqs-block-content">&nbsp;</div>
+                                </div>
+
+
+                                <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+                                    id="block-8b47426c5dd57d8cbc6d">
+                                    <div class="sqs-block-content">
+                                        <h3 style="white-space:pre-wrap;"><a
+                                                href="https://kunjshah.dev/Swachh/">Swacch</a></h3>
+                                        <p class="" style="">An Application which enables user to
+                                            report any grievance by clicking picture and the system detects the issues
+                                            using image classification and reports to nearby authorities depending on
+                                            user’s location.
+                                            Swachh is an AI Enabled citizen grievance monitoring and response system for
+                                            reporting grievances observed and faced by local people in their day to day
+                                            life.
+                                            Its one click grievance reporting system which will be fed with pictures of
+                                            different problems such as garbage spill, potholes, no parkings, stray dogs
+                                            etc. with its location to an AI model which will classify the category of
+                                            the problems and assigns task to respected authorities.
+                                            Using Data Analysis and Data visualization Swachh provides a dashboard to
+                                            get visual reports of their area weekly, monthly, annually using different
+                                            graphs and data visualization techniques which can be viewed by the
+                                            authorities as well as by the normal users so there will a transparent
+                                            process and complaints can be tracked.
+                                        </p>
+                                        <p class="">Below is a video overview of the
+                                            project.</p>
+                                    </div>
+                                </div>
+                                <div class="sqs-block video-block sqs-block-video"
+                                    data-block-json="{&quot;blockAnimation&quot;:&quot;none&quot;,&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;overlay&quot;:false,&quot;description&quot;:{},&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;html&quot;:&quot;&lt;iframe src=\&quot;https://player.vimeo.com/video/638729200?h=d3101bacb5&amp;amp;app_id=122963\&quot; width=\&quot;640\&quot; height=\&quot;360\&quot; frameborder=\&quot;0\&quot; allow=\&quot;autoplay; fullscreen; picture-in-picture\&quot; allowfullscreen title=\&quot;Lunchbox\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://vimeo.com/638729200&quot;,&quot;width&quot;:640,&quot;height&quot;:360,&quot;providerName&quot;:&quot;Vimeo&quot;,&quot;thumbnailUrl&quot;:&quot;https://i.vimeocdn.com/video/1284247778-e4266faf71db65399822688904d9d44cf0a8a9c075a951374_640&quot;,&quot;resolvedBy&quot;:&quot;vimeo&quot;}"
+                                    data-block-type="32" id="block-yui_3_17_2_1_1636034783573_12021">
+                                    <div class="sqs-block-content" id="yui_3_17_2_1_1648206741752_95">
+                                        <div class="intrinsic" style="max-width:100%">
+                                            <div class="embed-block-wrapper" style="padding-bottom:56.25%;">
+                                                <div class="sqs-video-wrapper video-none" data-provider-name="Vimeo"
+                                                    data-html="&lt;iframe src=&quot;https://player.vimeo.com/video/638729200?h=d3101bacb5&amp;app_id=122963&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen title=&quot;Lunchbox&quot;&gt;&lt;/iframe&gt;"
+                                                    id="yui_3_17_2_1_1648206741752_102">
+                                                    <div class="intrinsic">
+                                                        <div class="intrinsic-inner" style="padding-bottom: 56.25%;">
+                                                            <img class="thumb-image loaded"
+                                                                data-src="https://images.squarespace-cdn.com/content/v1/560c2d19e4b0b4fae0ca6cc6/6d0cf020-09f4-4ba5-ab94-85a49af127fc/Screen+Shot+2021-11-04+at+10.00.51+AM.png"
+                                                                data-image="https://images.squarespace-cdn.com/content/v1/560c2d19e4b0b4fae0ca6cc6/6d0cf020-09f4-4ba5-ab94-85a49af127fc/Screen+Shot+2021-11-04+at+10.00.51+AM.png"
+                                                                data-image-dimensions="1977x1098"
+                                                                data-image-focal-point="0.5,0.5" alt=""
+                                                                data-load="false"
+                                                                data-image-id="6183e94617618c36198de88b"
+                                                                data-type="image"
+                                                                style="left: -0.0776981%; top: 0%; width: 100.155%; height: 100%; position: absolute;"
+                                                                data-image-resolution="2500w"
+                                                                src="https://github.com/ramsuthar305/Swachh/blob/master/swachh.gif?raw=true">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+                                    id="block-yui_3_17_2_1_1636034783573_13295">
+                                    <div class="sqs-block-content">
+                                        <p class="">For this project, our team learned and
+                                            experimented with
+                                            multiple new technologies in addition to the Flask and React Native for
+                                            Android and iOS mobile application stack. We used Fastai
+                                            for image classification. We used sockets to update the status os
+                                            predictions.
+                                        </p>
+                                        <p class=""><a href="https://github.com/kunjshah45/Swachh">Click
+                                                here to take a look
+                                                at the project on Github!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="sqs-block horizontalrule-block sqs-block-horizontalrule"
+                                    data-block-type="47" id="block-yui_3_17_2_1_1636034783573_19985">
+                                    <div class="sqs-block-content">
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+                                    id="block-yui_3_17_2_1_1636034783573_38152">
+                                    <div class="sqs-block-content">
+                                        <h3>India Location Details - NPM Package</h3>
+                                        <p class="">Open Source contribution.
+                                            india-location-details package is to
+                                            get details about Indian locations based on pincode, state name or city
+                                            name.
+                                        </p>
+                                        <p class=""><a href="https://www.npmjs.com/package/india-location-details">Click
+                                                here
+                                                to explore the deployed npm package</a>
+                                        </p>
+                                        <p class=""><a href="https://github.com/rahasya-co/india-location-details">or
+                                                here to
+                                                take
+                                                a look at the github
+                                                repo</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="sqs-block horizontalrule-block sqs-block-horizontalrule"
+                                    data-block-type="47" id="block-yui_3_17_2_1_1636034783573_50071">
+                                    <div class="sqs-block-content">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5"
+                                    id="block-yui_3_17_2_1_1636034783573_49203">
+                                    <div class="sqs-block-content" id="yui_3_17_2_1_1648206741752_218">
+                                        <div class="
+                                            image-block-outer-wrapper
+                                            layout-caption-below
+                                            design-layout-inline
+                                            combination-animation-none
+                                            individual-animation-none
+                                            individual-text-animation-none
+                                            " data-test="image-block-inline-outer-wrapper"
+                                            id="yui_3_17_2_1_1648206741752_217">
+                                            <figure class="
+                                               sqs-block-image-figure
+                                               intrinsic
+                                               " style="max-width:1998px;" id="yui_3_17_2_1_1648206741752_216">
+                                                <div class="image-block-wrapper" data-animation-role="image"
+                                                    id="yui_3_17_2_1_1648206741752_215">
+                                                    <div class="sqs-image-shape-container-element
+                                                     has-aspect-ratio
+                                                     " style="
+                                                     position: relative;
+                                                     padding-bottom:76.07608032226562%;
+                                                     overflow: hidden;
+                                                     " id="yui_3_17_2_1_1648206741752_214">
+                                                        <noscript><img
+                                                                src="https://images.squarespace-cdn.com/content/v1/560c2d19e4b0b4fae0ca6cc6/1454b382-7489-462e-91b1-34070af6936e/Screen+Shot+2021-11-04+at+10.38.49+AM.png"
+                                                                alt="" /></noscript>
+                                                        <img class="thumb-image loaded"
+                                                            data-src="https://images.squarespace-cdn.com/content/v1/560c2d19e4b0b4fae0ca6cc6/1454b382-7489-462e-91b1-34070af6936e/Screen+Shot+2021-11-04+at+10.38.49+AM.png"
+                                                            data-image="https://images.squarespace-cdn.com/content/v1/560c2d19e4b0b4fae0ca6cc6/1454b382-7489-462e-91b1-34070af6936e/Screen+Shot+2021-11-04+at+10.38.49+AM.png"
+                                                            data-image-dimensions="1998x1520"
+                                                            data-image-focal-point="0.5,0.5" alt="" data-load="false"
+                                                            data-image-id="6183f0ed856659790d65950d" data-type="image"
+                                                            style="left: -0.0321546%; top: 0%; width: 100.064%; height: 100%; position: absolute;"
+                                                            data-image-resolution="2500w" src="./assets/img/nibodh.png">
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+                                    id="block-yui_3_17_2_1_1636034783573_51991">
+                                    <div class="sqs-block-content">
+                                        <h3>Nibodh - Portal for searching schools</h3>
+                                        <p class="">NIBODH is a sanskrit elucidation meaning knowledge, which is an
+                                            educational start-up firm that hails from the rooting principal of imparting
+                                            ideal pathways for optimizing your young one's schooling experience with the
+                                            best fit to your preferences. Also, it strives to acquire exemplary yields
+                                            from the students of technical Institutes tending to deliver well crafted
+                                            and polished engineers to the fast-growing industry.
+                                            We cater to strengthening the intricate flaws following the ritualistic
+                                            procedure of the education system. It contemplates every faccet to suit you
+                                            with the bestest for your desired criterion. Appealing utmost importance to
+                                            your comfort zone, we assure you with the highest of optimal selection for
+                                            your ward at any stage of his/her schooling life.
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="row sqs-row" id="yui_3_17_2_1_1648206741752_238">
+                                    <div class="col sqs-col-6 span-6">
+                                        <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+                                            id="block-yui_3_17_2_1_1636034783573_57240">
+                                            <div class="sqs-block-content">
+                                                <p class="" data-rte-preserve-empty="true"></p>
+                                                <p class="">In hindsight, this project was initally developed in
+                                                    Python's framework Flask, but eventually we decided to regenerate
+                                                    this project in React, Next.js and Nodejs as backend!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col sqs-col-6 span-6" id="yui_3_17_2_1_1648206741752_237">
+                                        <div class="sqs-block image-block sqs-block-image sqs-text-ready"
+                                            data-block-type="5" id="block-yui_3_17_2_1_1636034783573_56262">
+                                            <div class="sqs-block-content" id="yui_3_17_2_1_1648206741752_236">
+                                                <div class="image-block-outer-wrapper
+                                                  layout-caption-below
+                                                  design-layout-inline
+                                                  combination-animation-none
+                                                  individual-animation-none
+                                                  individual-text-animation-none
+                                                  sqs-narrow-width" data-test="image-block-inline-outer-wrapper"
+                                                    id="yui_3_17_2_1_1648206741752_235">
+                                                    <figure class="
+                                                     sqs-block-image-figure
+                                                     intrinsic
+                                                     " style="max-width:2000px;" id="yui_3_17_2_1_1648206741752_234">
+                                                        <div class="image-block-wrapper" data-animation-role="image"
+                                                            id="yui_3_17_2_1_1648206741752_233">
+                                                            <div class="sqs-image-shape-container-element
+                                                           has-aspect-ratio
+                                                           " style="
+                                                           position: relative;
+                                                           padding-bottom:75.80000305175781%;
+                                                           overflow: hidden;
+                                                           " id="yui_3_17_2_1_1648206741752_232">
+                                                                <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/560c2d19e4b0b4fae0ca6cc6/30399504-abd5-459e-ab31-61dc4048c3f5/Screen+Shot+2021-11-04+at+10.48.13+AM.png"
+                                                                        alt="" /></noscript>
+                                                                <img class="thumb-image loaded"
+                                                                    data-src="https://images.squarespace-cdn.com/content/v1/560c2d19e4b0b4fae0ca6cc6/30399504-abd5-459e-ab31-61dc4048c3f5/Screen+Shot+2021-11-04+at+10.48.13+AM.png"
+                                                                    data-image="https://images.squarespace-cdn.com/content/v1/560c2d19e4b0b4fae0ca6cc6/30399504-abd5-459e-ab31-61dc4048c3f5/Screen+Shot+2021-11-04+at+10.48.13+AM.png"
+                                                                    data-image-dimensions="2000x1516"
+                                                                    data-image-focal-point="0.5,0.5" alt=""
+                                                                    data-load="false"
+                                                                    data-image-id="6183f2c190eb205f278d41a7"
+                                                                    data-type="image"
+                                                                    style="left: -0.118148%; top: 0%; width: 100.236%; height: 100%; position: absolute;"
+                                                                    data-image-resolution="1000w"
+                                                                    src="./assets/img/nibodh_search.png">
+                                                            </div>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sqs-block horizontalrule-block sqs-block-horizontalrule"
+                                    data-block-type="47" id="block-yui_3_17_2_1_1636034783573_50071">
+                                    <div class="sqs-block-content">
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+                                    id="block-yui_3_17_2_1_1636034783573_38152">
+                                    <div class="sqs-block-content">
+                                        <h3>Automated Guided Vehicle</h3>
+                                        <p class=""> I created a prototype of one AGV which followed instructions to
+                                            move pallet from source to destination. I learned about ROS, Sensors,
+                                            Mapping of area using LIDAR. Built a AGV in a network
+                                            which follows certain operations based on availability of machines and
+                                            picking up and dropping pallets from one source to destination. The process
+                                            of allocating AGVs to tasks, taking into account the cost and required time
+                                            for the operations to be done. Efficient scheduling therefore would increase
+                                            the productivity and reduce the delivery cost whilst the entire fleet is
+                                            optimally utilized.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

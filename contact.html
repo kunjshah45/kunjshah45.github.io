@@ -224,15 +224,7 @@
                                                                 name="email" type="email" autocomplete="email"
                                                                 spellcheck="false" aria-required="true">
                                                         </div>
-                                                        <div class="form-item field text required">
-                                                            <label class="title"
-                                                                for="text-yui_3_17_2_1_1636038758949_1666-field">
-                                                                Subject
-                                                                <span class="required" aria-hidden="true">*</span>
-                                                            </label>
-                                                            <input class="field-element text" type="text" name="subject"
-                                                                aria-required="true">
-                                                        </div>
+
                                                         <div class="form-item field textarea required">
                                                             <label class="title">
                                                                 Message
@@ -307,7 +299,7 @@
                 "message": document.getElementsByClassName("field-element")[4].value,
             }
 
-            const url = "http://localhost:5001/contact-emailer-9c5b6/us-central1/sendEmail";
+            const url = "https://us-central1-contact-emailer-9c5b6.cloudfunctions.net/sendEmailContact";
             var xhr = new XMLHttpRequest();
             xhr.open("POST", url, true);
 

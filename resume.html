@@ -116,7 +116,7 @@
                             <nav class="main-nav" data-content-field="navigation">
                                 <ul>
                                     <li class="page-collection">
-                                        <a href=".">HOME</a>
+                                        <a href="./">HOME</a>
                                     </li>
                                     <li class="page-collection">
                                         <a href="./portfolio.html">Portfolio</a>
@@ -128,7 +128,8 @@
                                         <a href="./contact.html">Contact Me</a>
                                     </li>
                                 </ul>
-                                <select id="mobileSelect" name="mobileSelect">
+                                <select id="mobileSelect" name="mobileSelect"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
                                     <option class="mobile-select-label" value="">Navigation</option>
                                     <option class="page-collection" value="./">HOME</option>
                                     <option class="page-collection" value="./portfolio.html">Portfolio</option>

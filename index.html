@@ -140,13 +140,16 @@
 									</li>
 								</ul>
 
-								<select id="mobileSelect" name="mobileSelect">
-									<option class="mobile-select-label" value="">Navigation</option>
-									<option class="page-collection" value="./" selected="selected">HOME
+								<select id="mobileSelect" name="mobileSelect"
+									onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+									<option class="page-collection" value="./" selected="selected">
+										HOME</option>
+									<option class="page-collection" value="./portfolio.html">
+										PORTFOLIO</option>
+									<option class="page-collection" value="./resume.html">RESUME
 									</option>
-									<option class="page-collection" value="./portfolio.html">PORTFOLIO</option>
-									<option class="page-collection" value="./resume.html">RESUME</option>
-									<option class="page-collection" value="./contact.html">CONTACT ME</option>
+									<option class="page-collection" value="./contact.html">CONTACT ME
+									</option>
 								</select>
 							</nav>
 						</div>

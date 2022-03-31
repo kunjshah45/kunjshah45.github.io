@@ -129,8 +129,8 @@
                                         <a href="./contact.html">Contact Me</a>
                                     </li>
                                 </ul>
-                                <select id="mobileSelect" name="mobileSelect">
-                                    <option class="mobile-select-label" value="">Navigation</option>
+                                <select id="mobileSelect" name="mobileSelect"
+                                    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
                                     <option class="page-collection" value="./">HOME</option>
                                     <option class="page-collection" value="./portfolio">Portfolio</option>
                                     <option class="page-collection" value="./resume.html">Resume</option>

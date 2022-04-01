@@ -181,7 +181,7 @@
 										</p>
 									</div>
 									<div class="w3-xlarge" style="padding-top: 1em;word-spacing: 1em;">
-										<a href="mailto:kunjshah45@gmail.com"><i class="fa fa-envelope-o"></i></a>
+										<a href="#" onclick="copyClip()"><i class="fa fa-envelope-o"></i></a>
 										<a href="https://www.linkedin.com/in/kunjshah45/"><i
 												class="fa fa-linkedin"></i></a>
 										<a href="https://github.com/kunjshah45/"><i class="fa fa-github"></i></a>
@@ -189,6 +189,7 @@
 										<a href="https://www.instagram.com/kunjshah_/"><i
 												class="fa fa-instagram"></i></a>
 									</div>
+									<p class="sqs-block-content" id="copyPopup"></p>
 								</div>
 							</div>
 						</div>
@@ -209,6 +210,21 @@
 
 		</div>
 	</div>
+	<script>
+		function copyClip() {
+			/* Get the text field */
+			var copyText = "kunjshah45@gmail.com";
+
+			/* Copy the text inside the text field */
+			navigator.clipboard.writeText(copyText);
+
+			document.getElementById("copyPopup").innerHTML = "Email copied to the clipboard!";
+
+			setTimeout(function () {
+				document.getElementById("copyPopup").innerHTML = '';
+			}, 3000);
+		}
+	</script>
 </body>
 
 </html>

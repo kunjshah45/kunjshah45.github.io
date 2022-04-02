@@ -241,7 +241,7 @@
                                                             class="button sqs-system-button sqs-editable-button sqs-button-element--primary"
                                                             type="button" value="Submit" onclick="afterSubmit(event);">
                                                     </div>
-                                                    <div class="hidden form-submission-text">Thank you!</div>
+                                                    <div class=" form-submission-text" id="afterMessage"></div>
                                                     <div class="hidden form-submission-html" data-submission-html="">
                                                     </div>
                                                 </form>
@@ -298,24 +298,34 @@
                 "message": document.getElementsByClassName("field-element")[3].value,
             }
 
-            const url = "https://us-central1-contact-emailer-9c5b6.cloudfunctions.net/sendEmailContact";
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", url, true);
+            // const url = "https://us-central1-contact-emailer-9c5b6.cloudfunctions.net/sendEmailContact";
+            const url = "http://localhost:5001/contact-emailer-9c5b6/us-central1/sendEmailContact";
 
-            // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
 
-            xhr.onreadystatechange = function () { // Call a function when the state changes.
-                if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-                    // Request finished. Do processing here.
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: JSON.stringify(params),
+                redirect: 'follow'
+            };
+
+            fetch(url, requestOptions)
+                .then(response => response.text())
+                .then(result => {
                     document.getElementById("contactForm").reset();
-                    alert("I have received your contact form, I will get back to you in few hours.");
-                }
-                if (this.status == 500) {
-                    alert(`Something went wrong, I am sorry. You can still react me out at kunjshah45@gmail.com`);
-                }
-            }
-            xhr.send(JSON.stringify(params));
+                    document.getElementById("afterMessage").innerHTML = "I have received your contact form, I will get back to you in few hours.";
+
+                    setTimeout(function () {
+                        document.getElementById("afterMessage").innerHTML = '';
+                    }, 3000);
+                })
+                .catch(error => {
+                    document.getElementById("afterMessage").innerHTML = "Something went wrong, I am sorry. You can still react me out at kunjshah45@gmail.com";
+                });
         }
+
     </script>
 </body>
 

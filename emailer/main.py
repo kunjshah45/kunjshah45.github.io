@@ -22,7 +22,7 @@ def read_emailer_message(filename):
     
 
 def main(csv_file, json_file, sender_email):
-    subject = "Inquiry About Job Openings SDE"
+    subject = "Inquirying about Job Openings SDE"
     make_json(csvFilePath=csv_file, jsonFilePath=json_file)
     data = read_json(json_file)
     message = read_emailer_message(".emailer_message")
@@ -49,7 +49,7 @@ Dear {each["name"].title()},
                 each["email"] = each["email"].replace(fformat, first_name).replace(lformat, last_name).lower().lstrip().rstrip()
 
             print("Sending email to: ", each["email"])
-            send_email(sender_email=sender_email, subject=subject, body=body, receiver_email=each["email"], filename="assets/pdf/kunj_shah_resume0415.pdf")
+            send_email(sender_email=sender_email, subject=subject, body=body, receiver_email=each["email"], filename="assets/pdf/kunj_shah_resume_0506.pdf")
             data[i]["email_sent"] = True
         except Exception as e:
             data[i]["email_sent"] = False

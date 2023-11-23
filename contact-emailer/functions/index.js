@@ -2,18 +2,40 @@ const functions = require("firebase-functions");
 
 const nodemailer = require('nodemailer');
 
-const admin = require("firebase-admin");
+const firebase = require("firebase-admin");
+const { getFirestore } = require("firebase-admin/firestore")
+
 const cors = require('cors')({ origin: true });
+const fbApp = firebase.initializeApp({
+    databaseURL: process.env.DATABASEURL,
+    apiKey: process.env.WEBAPI,
+    projectId: process.env.PROJECTID,
+    authDomain: process.env.AUTHDOMAIN,
+})
 
-admin.initializeApp()
-
-// Create and Deploy Your First Cloud Functions
-// https://firebase.google.com/docs/functions/write-firebase-functions
+const db = getFirestore();
 
 
 exports.helloWorld = functions.https.onRequest((request, response) => {
     functions.logger.info("Hello logs!", { structuredData: true });
     response.send("Hello from Firebase!");
+});
+
+exports.saveData = functions.https.onRequest(async (request, response) => {
+    cors(request, response, async () => {
+        try {
+            functions.logger.info("Logs for savedaata!", { structuredData: true });
+            let email = request.body.email;
+            functions.logger.info("Email" + email, { structuredData: true });
+
+            const res = await db.collection("users").add({ "email": email });
+
+            return response.send(200, { message: "Email Saved successfully" });
+
+        } catch (error) {
+            return response.send(500, { message: error });
+        }
+    });
 });
 
 var transporter = nodemailer.createTransport({
